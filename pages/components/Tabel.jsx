@@ -1,103 +1,104 @@
 export default function Table () {
   return (
     <div className="overflow-x-auto relative shadow-md sm:rounded-lg">
-  <table className="w-full text-sm text-left text-blue-100 dark:text-blue-100 ">
-    <thead className="text-xs text-white uppercase bg-[#c2c2c2] border-b border-blue-400 dark:text-white">
+      <h1 className="text-4xl px-4 py-4">Meus Contratos</h1>
+  <table className="w-full text-sm text-left text-blue-100 dark:text-blue-100">
+    <thead className="text-xs text-white uppercase bg-[#c2c2c2] border-b dark:text-white">
       <tr>
-        <th scope="col" className="py-3 px-6">
-          Product name
+        <th scope="col" className="py-3 px-6 text-[#248D22]">
+          NÚMERO
         </th>
-        <th scope="col" className="py-3 px-6">
-          Color
+        <th scope="col" className="py-3 px-6 text-[#248D22]">
+          PESSOA CONTRATADA
         </th>
-        <th scope="col" className="py-3 px-6">
-          Category
+        <th scope="col" className="py-3 px-6 text-[#248D22]">
+          DATA DE ÍNICIO
         </th>
-        <th scope="col" className="py-3 px-6">
-          Price
+        <th scope="col" className="py-3 px-6 text-[#248D22]">
+          DATA DE TÉRMINO
         </th>
-        <th scope="col" className="py-3 px-6">
+        <th scope="col" className="py-3 px-6 text-[#248D22]">
           Action
         </th>
       </tr>
     </thead>
     <tbody>
-      <tr className="bg-[#c2c2c2] border-b border-blue-400 hover:bg-blue-500">
+      <tr className="bg-[#c2c2c2] border-b hover:bg-blue-500 text-black">
         <th
           scope="row"
-          className="py-4 px-6 font-medium text-blue-50 whitespace-nowrap dark:text-blue-100"
+          className="py-4 px-6 font-medium text-black whitespace-nowrap dark:text-blue-100"
         >
           Apple MacBook Pro 17"
         </th>
-        <td className="py-4 px-6">Sliver</td>
+        <td className="py-4 px-6">NOME DA EMPRESA</td>
         <td className="py-4 px-6">Laptop</td>
         <td className="py-4 px-6">$2999</td>
         <td className="py-4 px-6">
-          <a href="#" className="font-medium text-white hover:underline">
+          <a href="#" className="font-medium text-black hover:underline">
             Edit
           </a>
         </td>
       </tr>
-      <tr className="bg-blue-600 border-b border-blue-400 hover:bg-blue-500">
+      <tr className="bg-[#c2c2c2] border-b hover:bg-blue-500 text-black">
         <th
           scope="row"
-          className="py-4 px-6 font-medium text-blue-50 whitespace-nowrap dark:text-blue-100"
+          className="py-4 px-6 font-medium text-black whitespace-nowrap dark:text-blue-100"
         >
           Microsoft Surface Pro
         </th>
-        <td className="py-4 px-6">White</td>
+        <td className="py-4 px-6">NOME DA EMPRESA</td>
         <td className="py-4 px-6">Laptop PC</td>
         <td className="py-4 px-6">$1999</td>
         <td className="py-4 px-6">
-          <a href="#" className="font-medium text-white hover:underline">
+          <a href="#" className="font-medium text-black hover:underline">
             Edit
           </a>
         </td>
       </tr>
-      <tr className="bg-blue-600 border-b border-blue-400 hover:bg-blue-500">
+      <tr className="bg-[#c2c2c2] border-b hover:bg-blue-500 text-black">
         <th
           scope="row"
-          className="py-4 px-6 font-medium text-blue-50 whitespace-nowrap dark:text-blue-100"
+          className="py-4 px-6 font-medium text-black whitespace-nowrap dark:text-blue-100"
         >
           Magic Mouse 2
         </th>
-        <td className="py-4 px-6">Black</td>
+        <td className="py-4 px-6">NOME DA EMPRESA</td>
         <td className="py-4 px-6">Accessories</td>
         <td className="py-4 px-6">$99</td>
         <td className="py-4 px-6">
-          <a href="#" className="font-medium text-white hover:underline">
+          <a href="#" className="font-medium text-black hover:underline">
             Edit
           </a>
         </td>
       </tr>
-      <tr className="bg-blue-600 border-b border-blue-400 hover:bg-blue-500">
+      <tr className="bg-[#c2c2c2] border-b hover:bg-blue-500 text-black">
         <th
           scope="row"
-          className="py-4 px-6 font-medium text-blue-50 whitespace-nowrap dark:text-blue-100"
+          className="py-4 px-6 font-medium text-black whitespace-nowrap dark:text-blue-100"
         >
           Google Pixel Phone
         </th>
-        <td className="py-4 px-6">Gray</td>
+        <td className="py-4 px-6">NOME DA EMPRESA</td>
         <td className="py-4 px-6">Phone</td>
         <td className="py-4 px-6">$799</td>
         <td className="py-4 px-6">
-          <a href="#" className="font-medium text-white hover:underline">
+          <a href="#" className="font-medium text-black hover:underline">
             Edit
           </a>
         </td>
       </tr>
-      <tr className="bg-blue-600 border-blue-400 hover:bg-blue-500">
+      <tr className="bg-[#c2c2c2] hover:bg-blue-500 text-black">
         <th
           scope="row"
-          className="py-4 px-6 font-medium text-blue-50 whitespace-nowrap dark:text-blue-100"
+          className="py-4 px-6 font-medium text-black whitespace-nowrap dark:text-blue-100"
         >
           Apple Watch 5
         </th>
-        <td className="py-4 px-6">Red</td>
+        <td className="py-4 px-6">NOME DA EMPRESA</td>
         <td className="py-4 px-6">Wearables</td>
         <td className="py-4 px-6">$999</td>
         <td className="py-4 px-6">
-          <a href="#" className="font-medium text-white hover:underline">
+          <a href="#" className="font-medium text-black hover:underline">
             Edit
           </a>
         </td>
