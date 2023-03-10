@@ -1,115 +1,17 @@
-import NavBar from './components/NavBar'
+import Link from 'next/link';
 
-export default function Index() {
+export default function Homes() {
+
   return (
+  <div className="flex flex-col text-center mt-52">
+    <h1 className="text-6xl text-center w-[949px] font-medium m-auto top-80">Esteja atento (a) aos <span className="text-[#248d22]">prazos dos contratos</span> e torne o seu trabalho <span className="text-[#248d22]">mais produtivo</span>.</h1>
+
     <div>
-      <NavBar />
-      <div className="overflow-x-auto relative sm:rounded-xl">
-        <h1 className="text-4xl px-4 py-4 font-medium">Meus Contratos</h1>
-      <table className="w-[80%] m-auto text-sm text-left text-blue-100 dark:text-blue-100">
-        <thead className="text-xs text-white uppercase bg-[#c2c2c2] border-b dark:text-white">
-          <tr>
-            <th scope="col" className="py-3 px-6 text-[#248D22]">
-              NÚMERO
-            </th>
-            <th scope="col" className="py-3 px-6 text-[#248D22]">
-              PESSOA CONTRATADA
-            </th>
-            <th scope="col" className="py-3 px-6 text-[#248D22]">
-              DATA DE ÍNICIO
-            </th>
-            <th scope="col" className="py-3 px-6 text-[#248D22]">
-              DATA DE TÉRMINO
-            </th>
-            <th scope="col" className="py-3 px-6 text-[#248D22]">
-              Action
-            </th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr className="bg-[#c2c2c2] border-b hover:bg-[#248D22] text-black">
-            <th
-              scope="row"
-              className="py-4 px-6 font-medium text-black whitespace-nowrap dark:text-blue-100"
-            >
-              Apple MacBook Pro 17"
-            </th>
-            <td className="py-4 px-6">NOME DA EMPRESA</td>
-            <td className="py-4 px-6">Laptop</td>
-            <td className="py-4 px-6">$2999</td>
-            <td className="py-4 px-6">
-              <a href="#" className="font-medium text-black hover:underline">
-                Edit
-              </a>
-            </td>
-          </tr>
-          <tr className="bg-[#c2c2c2] border-b hover:bg-[#248D22] text-black">
-            <th
-              scope="row"
-              className="py-4 px-6 font-medium text-black whitespace-nowrap dark:text-blue-100"
-            >
-              Microsoft Surface Pro
-            </th>
-            <td className="py-4 px-6">NOME DA EMPRESA</td>
-            <td className="py-4 px-6">Laptop PC</td>
-            <td className="py-4 px-6">$1999</td>
-            <td className="py-4 px-6">
-              <a href="#" className="font-medium text-black hover:underline">
-                Edit
-              </a>
-            </td>
-          </tr>
-          <tr className="bg-[#c2c2c2] border-b hover:bg-[#248D22] text-black">
-            <th
-              scope="row"
-              className="py-4 px-6 font-medium text-black whitespace-nowrap dark:text-blue-100"
-            >
-              Magic Mouse 2
-            </th>
-            <td className="py-4 px-6">NOME DA EMPRESA</td>
-            <td className="py-4 px-6">Accessories</td>
-            <td className="py-4 px-6">$99</td>
-            <td className="py-4 px-6">
-              <a href="#" className="font-medium text-black hover:underline">
-                Edit
-              </a>
-            </td>
-          </tr>
-          <tr className="bg-[#c2c2c2] border-b hover:bg-[#248D22] text-black">
-            <th
-              scope="row"
-              className="py-4 px-6 font-medium text-black whitespace-nowrap dark:text-blue-100"
-            >
-              Google Pixel Phone
-            </th>
-            <td className="py-4 px-6">NOME DA EMPRESA</td>
-            <td className="py-4 px-6">Phone</td>
-            <td className="py-4 px-6">$799</td>
-            <td className="py-4 px-6">
-              <a href="#" className="font-medium text-black hover:underline">
-                Edit
-              </a>
-            </td>
-          </tr>
-          <tr className="bg-[#c2c2c2] hover:bg-[#248D22] text-black">
-            <th
-              scope="row"
-              className="py-4 px-6 font-medium text-black whitespace-nowrap dark:text-blue-100"
-            >
-              Apple Watch 5
-            </th>
-            <td className="py-4 px-6">NOME DA EMPRESA</td>
-            <td className="py-4 px-6">Wearables</td>
-            <td className="py-4 px-6">$999</td>
-            <td className="py-4 px-6">
-              <a href="#" className="font-medium text-black hover:underline">
-                Edit
-              </a>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-        </div>
+      <Link href={`https://suap.ifrn.edu.br/o/authorize/?client_id=${process.env.SUAP_CLIENT_ID}&response_type=code`}>
+        <button 
+         className="bg-[#248D22] text-white rounded-2xl py-2 px-3 font-bold hover:bg-black mt-8">ENTRAR</button>
+      </Link>
+  </div>  
+  </div>
   )
 }

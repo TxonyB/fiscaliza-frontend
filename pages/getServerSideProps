@@ -1,0 +1,24 @@
+//Em qualquer página que exija autenticação, crie uma função getServerSideProps que faça uma requisição para a API /api/me para obter as informações do usuário autenticado. Em caso de erro, redirecione o usuário para a página de login.
+
+import axios from 'axios';
+
+export async function getServerSideProps(context) {
+  try {
+    const { data } = await axios.get('http://localhost:3000/api/me', {
+      headers: { cookie: context.req.headers.cookie },
+    });
+    return { props: { user: data } };
+  } catch (error) {
+    console.error(error);
+    return {
+      redirect: {
+        destination: '/login',
+        permanent: false,
+      },
+    };
+  }
+}
+
+export default function Home({ user }) {
+  return <div>Bem-vindo, {user.full_name}!</div>;
+}
