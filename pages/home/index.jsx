@@ -38,7 +38,7 @@ export default function Index() {
               scope="row"
               className="py-4 px-6 font-medium text-black whitespace-nowrap"
             >
-              Apple MacBook Pro 17"
+              Apple MacBook Pro 17
             </th>
             <td className="py-4 px-6">NOME DA EMPRESA</td>
             <td className="py-4 px-6">Laptop</td>
