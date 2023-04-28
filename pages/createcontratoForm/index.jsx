@@ -3,21 +3,22 @@ import axios from 'axios';
 
 export default function Form() {
 
-  const handleSubmit = async (event) => {
-    event.preventDefault();
+   const handleSubmit = async (event) => {
+      event.preventDefault();
   
-    const form = event.target;
-    const formData = new FormData(form);
+      const form = event.target;
+      const formData = new FormData(form);
   
-    const { data } = await axios.post('/api/contratos', formData);
-  
-    console.log(data);
-  };
+      await axios.post('http://localhost:4000/contratos', formData).then((response) => {
+        console.log(response.data);
+      });
+    };
   
   return (
   <>
   <h1 className="text-4xl font-bold text-center text-gray-900 py-8">CRIAR CONTRATO</h1>
   <form onSubmit={handleSubmit}>
+    
      <div className="overflow-hidden shadow sm:rounded-md">
         <div className="bg-white px-4 py-5 sm:p-6">
            <div className="grid grid-cols-6 gap-6">
@@ -136,7 +137,7 @@ export default function Form() {
               type="submit"
               className="inline-flex justify-center rounded-md bg-indigo-600 py-2 px-3 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
               >
-           Save
+           SALVAR
            </button>
         </div>
      </div>
